@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Peartfolio</title>
+    <link rel="stylesheet" href="./css/index.css" />
+  </head>
+  <body>
+    <!--Navigation Section-->
+    <nav>
+      <h2 id="logo">Peter De Rijck</h2>
+      <ul class="navigation-items">
+        <li class="navigation-item"><a href="#bio">Biography</a></li>
+        <li class="navigation-item"><a href="#projects">My Projects</a></li>
+        <li class="navigation-item"><a href="#hobbies">Hobbies</a></li>
+      </ul>
+    </nav>
+    <!--End of Navigation Section-->
+    <!--Main Section-->
+    <main>
+      <!--Biography Section-->
+      <section id="bio">
+        <p>My name is Peter De Rijck and at this moment I am <span id="time-container">0</span> seconds old.<br>I created this website to tell you a little more about myself. I've been living in a small belgian town called Torhout for a little over a year. I have lived in several cities in Belgium, as well in some across the world during a two year span that I was working on farms and b&b's.<br>That last experience was together with my wife Emma<img id="emma" src="./resources/images/emma.jpg alt='emma'"></img> we've been married over 4 years. We live together with our dog Rommie<img id="rommie" src="./resources/images/rommie.jpg alt='rommie'"></img><br><br>Below you can see some of the projects I've been working on in the past weeks, as well as some info about my hobbies.</p>
+      </section>
+      <!--Projects Section-->
+      <section id="projects">
+      </section>
+
+      <!--Hobby Section-->
+      <section id="hobbies">
+        <!--Running Section-->
+        <section id="running">
+
+        </section>
+        <!--Reading Section-->
+        <section id="reading">
+
+        </section>
+      </section>
+    </main>
+    <!--End of Main Section-->
+
+    <footer>Made in Torhout on a wintry day</footer>
+  </body>
+  <script>
+    const timeContainer = document.getElementById("time-container");
+    const BIRTH_DAY = "12-25-1983";
+    const BIRTH_DAY_DATE = new Date(BIRTH_DAY);
+    const intlNumberFormatter = new Intl.NumberFormat("en-GB");
+
+    setInterval(() => {
+      const now = new Date();
+      const difference = Math.floor(
+        (now.getTime() - BIRTH_DAY_DATE.getTime()) / 1000
+      );
+
+      timeContainer.innerText = intlNumberFormatter.format(difference);
+    }, 1000);
+
+    //add a script to show and hide the pictures of Emma and Rommie when you click on them
+    let emma = document.getElementById('emma');
+    let rommie = document.getElementById('rommie');
+    emma.style.display="none";
+    rommie.style.display="none";
+
+    function showEmmaRommie(event) {
+      if (event.key==='e') {
+        emma.style.display="block";
+      }
+      if (event.key==='r') {
+        rommie.style.display="block";
+      }
+      
+
+    };
+    function notShowpic(event) {
+      emma.style.display="none";
+      rommie.style.display="none";
+    }
+    document.addEventListener('keydown',showEmmaRommie);
+    document.addEventListener('keyup',notShowpic);
+
+  </script>
+</html>
