@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Peartfolio</title>
+    <link rel="stylesheet" href="./resources/css/index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Oswald&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Rubik+Vinyl&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <!--Header Section-->
+    <header>
+      <div class="wrapper">
+        <div class="logo">
+          Peter De Rijck
+        </div>
+      </div>
+      <nav>
+          <a class="anchor" href="./index.html">Home</a>
+      </nav>
+    </header>
+    <!--End of Header Section-->
+    <!--Main Section-->
+    <main>
+        <form  action=”mailto:peterderijck@gmail.com” method=”POST” enctype=”text/plain”>
+            <label for="name">Name:</label>
+            <input id="name" type="text" name="name" required>
+            <br>
+            <label for="company">Company:</label>
+            <input id="company" name="company" type="text" required>
+            <br>
+            <!--Yes or No-->
+            <span>Do you want to hire me?:</span>
+            <input id="yes" name="answer" type="radio" value="yes" required>
+            <label for="yes">Yes</label>
+            <input id="no" name="answer" type="radio" value="no" required>
+            <label for="no">No</label>
+            <br>
+            <!--Quote-->
+            <label for="quote">Motivational Quote:</label>
+            <input id="quote" name="quote" type="text" list="quote-choices" required>
+            <datalist id="quote-choices">
+              <option value="winner gets ice cream!"></option>
+              <option value="nothing beats being warm and cosy"></option>
+              <option value="carpe diem!"></option>
+            </datalist>
+            <br>
+            <!--Meaningful Message:-->
+            <label for="message">Tell me about yourself:</label>
+            <textarea id="message" required rows="8" cols="40">   
+            </textarea>
+            <br>   
+      
+      
+            <input type="submit" value="Contact Me!">
+        </form>
+    </main>
+    <!--End of Main Section-->
+
+    <footer class="foot">Made in Torhout on a wintry day</footer>
+  </body>
+</html>
