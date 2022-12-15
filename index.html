@@ -4,44 +4,89 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Peartfolio</title>
-    <link rel="stylesheet" href="./css/index.css" />
+    <link rel="stylesheet" href="./resources/css/index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Oswald&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Rubik+Vinyl&display=swap" rel="stylesheet">
   </head>
   <body>
-    <!--Navigation Section-->
-    <nav>
-      <h2 id="logo">Peter De Rijck</h2>
-      <ul class="navigation-items">
-        <li class="navigation-item"><a href="#bio">Biography</a></li>
-        <li class="navigation-item"><a href="#projects">My Projects</a></li>
-        <li class="navigation-item"><a href="#hobbies">Hobbies</a></li>
-      </ul>
-    </nav>
-    <!--End of Navigation Section-->
+    <!--Header Section-->
+    <header>
+      <div class="wrapper">
+        <div class="logo">
+          Peter De Rijck
+        </div>
+      </div>
+      <nav>
+          <a class="anchor" href="#bio">Biography</a>
+          <a class="anchor" href="#projects">My Projects</a>
+          <a class="anchor" href="#hobbies">Hobbies</a>
+          <a class="anchor" href="./contact.html">Contact</a>
+      </nav>
+    </header>
+    <!--End of Header Section-->
     <!--Main Section-->
     <main>
       <!--Biography Section-->
-      <section id="bio">
-        <p>My name is Peter De Rijck and at this moment I am <span id="time-container">0</span> seconds old.<br>I created this website to tell you a little more about myself. I've been living in a small belgian town called Torhout for a little over a year. I have lived in several cities in Belgium, as well in some across the world during a two year span that I was working on farms and b&b's.<br>That last experience was together with my wife Emma<img id="emma" src="./resources/images/emma.jpg alt='emma'"></img> we've been married over 4 years. We live together with our dog Rommie<img id="rommie" src="./resources/images/rommie.jpg alt='rommie'"></img><br><br>Below you can see some of the projects I've been working on in the past weeks, as well as some info about my hobbies.</p>
+      <section id="bio" class="gridtwo">
+          <p class="infotext">My name is Peter De Rijck and at this moment I am <span id="time-container">0</span> seconds old.<br>In the picture on the right I'm pondering the significance of every second.<br><br>I created this website to tell you a little more about myself. I've been living in a small belgian town called Torhout for a little over a year. I have lived in several cities in Belgium, as well in some across the world during a two year span that I was working on farms and b&b's.<br>That last experience was together with my wife Emma we've been married over 4 years. We live together with our dog Rommie<br><br>Below you can see some of the projects I've been working on in the past weeks, as well as some info about my hobbies.</p>
+          <p><img id="pond" src="resources/images/pond.jpg"> </p>
       </section>
       <!--Projects Section-->
-      <section id="projects">
+      <section id="projects" class="gridthree">
+        <div class="box top">Info about project</div>
+        <div class="box pr1">Project 1</div>
+        <div class="box pr2">Project 2</div>
+        <div class="box pr3">Project 3</div>
       </section>
-
       <!--Hobby Section-->
       <section id="hobbies">
         <!--Running Section-->
-        <section id="running">
-
+        <section id="running" class="gridrun">
+          <!--Banner of running-->
+          <div class="box top">
+            <p><span class="larger">Hobbies - Running</span><br><br>I like running. In 2022 I will have run over 2000km. I run because it clears my head and I love being out and in nature. I listen to music, try to spot as many birds as possible and try to find a new road every time I'm out. Below are some of my long runs in the neighbourhood of Torhout.
+            </p>
+          </div>
+          <!--The three runs-->
+          <div class="box ru1">I ran the Chicoreiroute, just a little over 55km on December 6th of 2022<br><iframe src='https://connect.garmin.com/modern/activity/embed/10093497517' title='Torhout Running' width='465' height='500' frameborder='0'></iframe>
+          </div>
+          <div class="box ru2">On july 17th, I ran the 6 hours of Aalter, my first attempt at a race like this. It is ran on a closed loop of a little over 2km. The temperatures were around 30 degrees all day. It was gruelling. <iframe src='https://connect.garmin.com/modern/activity/embed/9221751083' title='6u van Aalter' width='465' height='500' frameborder='0'></iframe>
+          </div>
+          <div class="box ru3">On july 2nd, I attempted to get my longest run in yet, I succeeded by running 64.92km, around 500m more than my previous record. I ran the <a href="https://www.vlaanderen-fietsland.be/nl/routes/region/brugse-ommeland/routedetail/270" alt="link to info about Wastine Route">Wastine Route</a>.<iframe src='https://connect.garmin.com/modern/activity/embed/9126773779' title='Torhout - 6 Hour - 50K attempt' width='465' height='500' frameborder='0'></iframe></div>
         </section>
         <!--Reading Section-->
-        <section id="reading">
-
+        <section id="reading" class="gridfive">
+          <div class="box top topfive">
+            <p><span class="larger">Hobbies - Reading</span><br><br>I like to read, my favourites are dystopian novels, detective novels and russian novels. I try to get some reading in every day, it calms the mind.</p>
+          </div>
+          <div class="box book">
+            <a href="https://www.goodreads.com/book/show/2657.To_Kill_a_Mockingbird?ac=1&from_search=true&qid=qwo9tmShTw&rank=1"><img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1553383690l/2657.jpg" alt="Cover of to kill a mockingbird"></img></a>
+          </div>
+          <div class="box book">
+            <a href="https://www.goodreads.com/book/show/50353739-snow?ac=1&from_search=true&qid=eVMiHPaBcg&rank=1"><img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1594215535l/54442313._SY475_.jpg"></img></a>
+          </div>
+          <div class="box book">
+            <a href="https://www.goodreads.com/book/show/13079982-fahrenheit-451?ac=1&from_search=true&qid=KqBcekfKPU&rank=2"><img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1383718290l/13079982.jpg">
+          </img></a>
+          </div>
+          <div class="box book">
+            <a href="https://www.goodreads.com/book/show/28003118-the-man-in-the-high-castle">
+              <img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1450110249l/28003118._SY475_.jpg"></img>
+            </a>
+          </div>
+          <div class="box book">
+            <a href="https://www.goodreads.com/book/show/29579.Foundation?ac=1&from_search=true&qid=I16is7P0Ss&rank=1">
+              <img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1417900846l/29579.jpg"></img>
+            </a>
+          </div>
         </section>
       </section>
     </main>
     <!--End of Main Section-->
 
-    <footer>Made in Torhout on a wintry day</footer>
+    <footer class="foot">Made in Torhout on a wintry day</footer>
   </body>
   <script>
     const timeContainer = document.getElementById("time-container");
